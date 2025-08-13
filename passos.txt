@@ -5,4 +5,12 @@ git config --global user.email raissasantos123.rs33@gmail.com
 Criando um projeto API
 dotnet new webapi -o GAF.Api --use-controllers
 
-dotnet add package Swashbuckle.AspNetCore --version 9.0.0
+dotnet add package Swashbuckle.AspNetCore --version 9.0.3
+
+dotnet add package Microsoft.EntityFrameworkCore --version 9.0.8
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 9.0.8
+dotnet add package Microsoft.EntityFrameworkCore.Tools --version 9.0.8
+dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore --version 9.0.8
+dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer --version 9.0.8
+dotnet add package System.IdentityModel.Tokens.Jwt --version 8.13.1
+dotnet add package MySql.EntityFrameworkCore --version 9.0.6
