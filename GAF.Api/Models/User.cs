@@ -1,5 +1,5 @@
-using Sytem.ComponentModel.DataAnnotations;
-using Sytem.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.AspNetCore.Identity;
 
 namespace GAF.Api.Models;
@@ -8,10 +8,10 @@ namespace GAF.Api.Models;
     public class User : IdentityUser
     {
         [Required]
-        [StringLenght(100)]
+        [StringLength(100)]
         public string Name { get; set; }
 
-        public DateTime CreateAt { get; set; } = DateTime.Now;
+        public DateTime CreatedAt { get; set; } = DateTime.Now;
         public DateTime UpdateAt { get; set; } = DateTime.Now;
         
     }

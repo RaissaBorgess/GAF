@@ -1,5 +1,5 @@
-using Sytem.ComponentModel.DataAnnotations;
-using Sytem.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace GAF.Api.Models;
 
@@ -10,14 +10,14 @@ public class Category
     public int id { get; set; }
     
     [Required]
-    [StringLenght(100)]
+    [StringLength(100)]
     public string Name { get; set; }
 
-    [StringLenght(500)]
+    [StringLength(500)]
     public string Description { get; set; }
 
     [Required]
-    [StringLenght(7)]
+    [StringLength(7)]
     public string Color { get; set; } = "#000000";
 
     [Required]
